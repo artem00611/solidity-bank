@@ -3,6 +3,8 @@
     "@openzeppelin/contracts": "^4.1.0"
   },
   "dependencies": {
+    "ganache-cli": "^6.12.2",
+    "mocha": "^8.4.0",
     "openzeppelin-solidity": "4.1.0"
   }
 }
