@@ -7,10 +7,10 @@ contract MyToken is ERC20, Ownable {
  constructor() ERC20("KepCoin", "KEP"){
     _mint(msg.sender, 100000000000000000000);
   }
-   function mint(address to, uint256 value) public onlyOwner returns (bool){
-  _mint(to, value); 
+   function mint(address to, uint256 value) public onlyOwner{
+    _mint(to, value); 
  }
- function burn(address to, uint256 value) public onlyOwner returns (bool){
+ function burn(address to, uint256 value) public onlyOwner{
   _burn(to, value); 
  }
 
